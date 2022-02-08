@@ -11,7 +11,3 @@ http.onload = function () {
     }
 }
 http.send();
-
-
-   
-
