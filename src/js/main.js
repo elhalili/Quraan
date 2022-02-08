@@ -1,5 +1,5 @@
 let http = new XMLHttpRequest();
-http.open('get', 'http://api.alquran.cloud/v1/quran/quran-uthmani');
+http.open('get', 'https://api.alquran.cloud/v1/quran/quran-uthmani');
 http.onload = function () {
     document.getElementById('onload').style.display = 'none';
 
