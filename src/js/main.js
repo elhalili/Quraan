@@ -6,7 +6,7 @@ http.onload = function () {
     var data = JSON.parse(http.response);
     for(let surah of data.data.surahs.references) {
         document.getElementById('field').innerHTML += `
-            <div> ${surah.name} </div>
+            <a href="surah.html?${surah.number}"> ${surah.name} </a>
         `;
     }
 }
