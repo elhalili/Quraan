@@ -1,13 +1,13 @@
-let http = new XMLHttpRequest();
-http.open('get', 'https://api.alquran.cloud/v1/meta');
-http.onload = function () {
+const req = new XMLHttpRequest();
+req.open('get', 'https://api.alquran.cloud/v1/meta');
+req.onload = function () {
     document.getElementById('onload').style.display = 'none';
 
-    var data = JSON.parse(http.response);
+    var data = JSON.parse(req.response);
     for(let surah of data.data.surahs.references) {
         document.getElementById('field').innerHTML += `
             <a href="surah.html?${surah.number}"> ${surah.name} </a>
         `;
     }
 }
-http.send();
+req.send();

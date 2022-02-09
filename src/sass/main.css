@@ -96,6 +96,7 @@ body {
 }
 .main .field a {
   text-decoration: none;
+  color: white;
   max-width: 400px;
   padding: 20px 40px;
   background-color: #012F29;
