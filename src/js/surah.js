@@ -18,19 +18,20 @@ req.onload = function () {
     surahPlace.innerHTML = `مكان النزول : ${data.revelationType}`;
 
     for(let ayah of data.ayahs) {
-        surahText.innerHTML += `${ayah.text}<span class="number">${ayah.numberInSurah}</span>`;
+        surahText.innerHTML += `${ayah.text}${" "} <span class="number">${ayah.numberInSurah}</span>${" "} `;
     }
 }
 req.send();
 
 setInterval(
     () => {
-        if (document.body.clientHeight == Math.round((window.scrollY + window.screen.height))){
+
+        if (document.body.clientHeight == Math.round((window.scrollY + window.screen.height)) || (window.scrollY == 0)){
             document.getElementsByClassName('top')[0].style.display = 'none';
         }
         else {
             document.getElementsByClassName('top')[0].style.display = 'block';
         }
     },
-    200
+    100
 );

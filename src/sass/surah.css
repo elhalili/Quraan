@@ -13,6 +13,7 @@
 
 body {
   background-color: var(--primary-color);
+  background: linear-gradient(270deg, #028e7b 0%, #03bda5 35%, #0dfbdc 100%);
   color: white;
   padding: 0;
 }
@@ -109,20 +110,46 @@ body {
   font-size: 20px;
   line-height: 1.6;
   background-color: #015F52;
+  background: linear-gradient(270deg, #028e7b 0%, #03bda5 35%, #0dfbdc 100%);
+  color: var(--thirdy-color);
   padding: 10px;
   text-indent: 20px;
   word-spacing: 2px;
 }
 .main .surah-text .number {
-  width: 12px;
-  height: 12px;
+  color: white;
+  height: 26px;
   border: 2px dashed coral;
   background-color: #028e7b;
   outline: 2px solid black;
-  font-size: 12px;
+  font-size: 10px;
   border-radius: 50%;
-  padding: 8px;
   margin: 4px;
+  padding: 6px;
+}
+
+@media (min-width: 768px) {
+  .main h1 {
+    font-size: 40px;
+    padding: 50px;
+  }
+  .main .info-surah-number {
+    font-size: 25px;
+    font-style: italic;
+  }
+  .main .info-surah-place {
+    font-size: 25px;
+    font-style: italic;
+  }
+  .main .surah-text {
+    font-size: 30px;
+    line-height: 1.8;
+    padding: 60px;
+  }
+  .main .surah-text .number {
+    padding: 10px;
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=surah.css.map */

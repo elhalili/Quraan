@@ -13,6 +13,7 @@
 
 body {
     background-color: var(--primary-color);
+    background: linear-gradient(270deg, rgba(2,142,123,1) 0%, rgba(3,189,165,1) 35%, rgba(13,251,220,1) 100%);;
     color: white;
     padding: 0;
 }
@@ -115,20 +116,57 @@ body {
         font-size: 20px;
         line-height: 1.6;
         background-color: #015F52;
+        background: linear-gradient(270deg, rgba(2,142,123,1) 0%, rgba(3,189,165,1) 35%, rgba(13,251,220,1) 100%);
+        color: var(--thirdy-color);
         padding: 10px;
         text-indent: 20px;
         word-spacing: 2px;
 
         .number {
-            width: 12px;
-            height: 12px;
+            color: white;
+            height: 26px;
             border: 2px dashed coral;
             background-color: #028e7b;
             outline: 2px solid black;
-            font-size: 12px;
+            font-size: 10px;
             border-radius: 50%;
-            padding: 8px;
             margin: 4px;
+            padding: 6px;
         }
     }
+
+}
+
+@media (min-width: 768px) {
+    .main {
+
+        h1 {
+            font-size: 40px;
+            padding: 50px;
+        }
+
+        .info-surah {
+            &-number {
+                font-size: 25px;
+                font-style: italic;
+            }
+
+            &-place {
+                font-size: 25px;
+                font-style: italic;
+            }
+        }
+
+
+        .surah-text {
+            font-size: 30px;
+            line-height: 1.8;
+            padding: 60px;
+            .number {
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+    
 }

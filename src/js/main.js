@@ -11,3 +11,18 @@ req.onload = function () {
     }
 }
 req.send();
+
+
+setInterval(
+    () => {
+
+        if (document.body.clientHeight == Math.round((window.scrollY + window.screen.height)) || (window.scrollY == 0)){
+            document.getElementsByClassName('top')[0].style.display = 'none';
+        }
+        else {
+            document.getElementsByClassName('top')[0].style.display = 'block';
+        }
+    },
+    100
+);
+
